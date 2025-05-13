@@ -1,13 +1,16 @@
 import random
 n=random.randint(1,100)
 a=-1
-guess=0
+guess=1
 while(n!=a):
+
     guess +=1
     a=int(input("guess the number"))
     if(a>n):
         print("Lower number please")
-    else:
+        guess +=1
+    elif(a<n):
         print("Higher number please")
+        guess +=1
     
-print(f"your choose right number {a}, {guess} ateemps")
+print(f"your choose right number {a}, {guess} attempts")
