@@ -3,8 +3,6 @@ n=random.randint(1,100)
 a=-1
 guess=1
 while(n!=a):
-
-    guess +=1
     a=int(input("guess the number"))
     if(a>n):
         print("Lower number please")
